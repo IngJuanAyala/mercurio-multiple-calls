@@ -1,0 +1,17 @@
+    // Método usando GET en lugar de POST
+    return this.http.get<IObtenerAdjuntosRespuesta>(
+      'http://localhost:3000/api/DescargarTodoComoZip', {
+        headers: new HttpHeaders({
+          'Content-Type': 'application/json',
+        }),
+        params: {
+          idRegistro: '499febac-cf3f-46d1-995e-6ac7cf04f7e4',
+          token: 'DU38E8Nl3Yj4iXJwpFmaSKr-KtweoJiP',
+          contactid: 'bfab9676-ac6f-4aa7-8ae5-3cff8a4747b1',
+          tipoTransaccion: '919900011',
+          idTransaccionServicio: 'c988cfc1-661f-ee11-937d-6045bdd51bc4',
+          idRequisito: '', // Lo mandas vacío
+          ruta: '499febac-cf3f-46d1-995e-6ac7cf04f7e4'
+        }
+      }
+    );

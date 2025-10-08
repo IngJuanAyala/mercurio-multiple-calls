@@ -1,0 +1,29 @@
+curl --location 'http://localhost:3000/api/test-multiple-calls' \
+--header 'Ocp-Apim-Subscription-Key: 18bed76a1ee9444392324163447283e5' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "iterations":4,
+    "payload": {
+        "datosUsuarios": [
+            {
+                "tipoDocumento": "Pasaporte",
+                "numeroDocumento": "uy6777",
+                "nombre": "pepe",
+                "apellido": "flores",
+                "email": "ayalajg@globalhitss.com",
+                "contrato": "2132265",
+                "telefonoContacto": "3204125098",
+                "direccionInmueble": "CR 72 B CL 78 B -85 (INTERIOR 1232 )",
+                "servicio": "Energía;Gas;Acueducto;Alcantarillado",
+                "tipoRequerimiento": "Reclamo",
+                "causa": "5",
+                "descripcion": "Energía - prueba v9 test",
+                "mesReclamado": "Julio",
+                "año": "2025",
+                "tipoCaso": 3,
+                "idTipoCaso": "831b65a-cb26-41a4-b14e-bddfec100b8a"
+            }
+        ],
+        "isAnexo": false
+    }
+}'
